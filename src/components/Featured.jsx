@@ -1,0 +1,1 @@
+export const Featured = () => <p>List of featured products</p>

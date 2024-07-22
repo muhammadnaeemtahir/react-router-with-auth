@@ -1,0 +1,1 @@
+export const New = () => <p>List of new products</p>
