@@ -3,6 +3,7 @@ import { useAuth } from './auth'
 
 const Navbar = () => {
 
+
     const NavLinkStyles = ({ isActive }) => {
         return {
             fontWeight: isActive ? "bold" : "normal",
@@ -20,11 +21,7 @@ const Navbar = () => {
                 <NavLink style={NavLinkStyles} to='/about'>About</NavLink>
                 <NavLink style={NavLinkStyles} to='/products'>Products</NavLink>
                 <NavLink style={NavLinkStyles} to='/users'>Users</NavLink>
-
-                {
-                    auth.user && <NavLink style={NavLinkStyles} to='/profile'>Profile</NavLink>
-                }
-
+                <NavLink style={NavLinkStyles} to='/profile'>Profile</NavLink>
                 {
                     !auth.user && <NavLink style={NavLinkStyles} to='/login'>Login</NavLink>
                 }
